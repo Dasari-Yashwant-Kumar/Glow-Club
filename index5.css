@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0,0,0,0.8);
+    color: #FFFFFF;
+}
+
+.club{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin: 45px 250px;
+    
+}
+
+.reservation{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    margin:10px 0;
+}
+
+.date, .time{
+    background: #000000;
+    padding: 5px 10px;
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+}
+
+.club-name{
+    background: #000000;
+    padding: 5px 10px;
+    width: 900px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    gap: 550px;
+}
+
+p{
+    padding: 8px;
+}
+
+hr{
+    background: #99181A;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0 20px 0;
+    border: none;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 35px;
+    margin: 35px 400px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background: #99181A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    margin: 30px;
+}
