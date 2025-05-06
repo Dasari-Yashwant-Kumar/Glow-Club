@@ -18,7 +18,7 @@
                     <li>Explore</li>
                     <li>Services</li>
                     <li>Contact Us</li>
-                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-user" id="profile"></i>
                 </ul>
             </div>
             <div class="info">
@@ -98,9 +98,30 @@
                 <p>Kingsman Cuts</p> 
             </div>
         </div>
-        <button>Check Out</button>
+        <form class="bookings">
+            <label for="booking-date">Select Date:</label>
+            <select id="booking-date" required></select>
+          
+            <label for="booking-time">Select Time (10:00 - 18:00):</label>
+            <select id="booking-time" required>
+                <option value="">--select time--</option>
+                <option value="10:00-11:15">10:00-11:15</option>
+                <option value="10:00-11:45">10:00-11:45</option>
+                <option value="12:00-12:45">12:00-12:45</option>
+                <option value="13:00-13:45">13:00-13:45</option>
+                <option value="14:00-14:45">14:00-14:45</option>
+                <option value="15:00-15:45">15:00-15:45</option>
+                <option value="16:00-16:45">16:00-16:45</option>
+                <option value="17:00-17:45">17:00-17:45</option>
+            </select>
+          
+            <!-- <button type="submit">Book Appointment</button> -->
+          </form>
+        <button class="check-out">Check Out</button>
         <hr>
     </div>
+
+    
 
     <div class="feedback">
         <h1>We’d love to hear from you</h1>

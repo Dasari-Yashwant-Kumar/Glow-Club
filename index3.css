@@ -34,6 +34,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    cursor: pointer;
 
 }
 
@@ -93,6 +94,11 @@ body{
     height: 300px;
     width: 300px;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+.img.selected{
+    border: 5px solid #99181A;
 }
 
 
@@ -113,6 +119,11 @@ hr{
     height: 300px;
     width: 300px;
     border-radius:150px 150px 0 0;
+    cursor: pointer;
+}
+
+.img-1.chosen{
+    border: 5px solid #99181A;
 }
 
 .serv-2 p{
@@ -129,6 +140,7 @@ button{
     border: none;
     border-radius: 25px;
     margin: 30px;
+    cursor: pointer;
 }
 
 .feedback{
@@ -168,7 +180,15 @@ button{
   
   .row button {
     width: 100%;
-  }
+    cursor: pointer;
+}
+
+.bookings{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
   
 
 

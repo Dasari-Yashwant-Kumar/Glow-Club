@@ -52,4 +52,9 @@ body{
     padding: 10px 80px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.details button:hover{
+    border: 2px solid #FFFFFF;
 }
