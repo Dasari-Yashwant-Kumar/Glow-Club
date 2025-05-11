@@ -85,7 +85,7 @@ const serviceCosts = {
     "Facial": 250,
     "Hairdyeing": 1000,
     "Massage": 120,
-    "Nailcare": 200 // Example cost for Nailcare
+    "Nailcare": 200 
 };
 
 serviceItem.forEach(service => {
