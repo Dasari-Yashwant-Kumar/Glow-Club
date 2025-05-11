@@ -51,3 +51,64 @@ option.textContent= displayDate;
 dropdown.appendChild(option);
 }
 
+dropdown.addEventListener("change", ()=>{
+    const selectedDate = option;
+    localStorage.setItem("selectedDate", selectedDate)
+})
+
+let booking = document.querySelector("#booking-time");
+
+
+booking.addEventListener("change", ()=>{
+    let selectedTime = booking.value;
+    localStorage.setItem("selectedTime", selectedTime);
+})
+
+const salon = document.querySelectorAll(".services-info .serv-2");
+
+salon.forEach(salon => {
+    const img = salon.querySelector("img");
+    const name = salon.querySelector("p");
+
+    img.addEventListener("click", () => {
+        const selectedSalon = name.innerText;
+        localStorage.setItem("selectedSalon", selectedSalon);
+        console.log("Selected salon:", selectedSalon);
+    });
+});
+
+const serviceItem = document.querySelectorAll(".services-info .serv-1");
+
+const serviceCosts = {
+    "Haircut": 150,
+    "Shaving": 100,
+    "Facial": 250,
+    "Hairdyeing": 1000,
+    "Massage": 120,
+    "Nailcare": 200 // Example cost for Nailcare
+};
+
+serviceItem.forEach(service => {
+    const img = service.querySelector("img");
+    const name = service.querySelector("p");
+
+   img.addEventListener("click", () => {
+    let selectedService = name.innerText.trim();
+
+    let selectedServices = JSON.parse(localStorage.getItem("selectedServices")) || [];
+
+    if (!selectedServices.some(s => s.name === selectedService)) {
+        let serviceCost = serviceCosts[selectedService];
+        selectedServices.push({ name: selectedService, cost: serviceCost });
+        localStorage.setItem("selectedServices", JSON.stringify(selectedServices));
+    }
+});
+
+});
+
+localStorage.removeItem("selectedServices");
+
+
+
+
+
