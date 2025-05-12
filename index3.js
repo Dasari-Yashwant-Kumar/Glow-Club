@@ -4,14 +4,48 @@ let profile = document.querySelector("#profile");
 let updatedName = document.querySelector(".welcome");
 updatedName.innerText = `Welcome to Glow Club "${Name}"`;
 
-let services = document.querySelectorAll(".img");
+const searchInput = document.querySelector("#search");
+const treatment = document.querySelectorAll("#services");
+const places = document.querySelectorAll("#location");
 
-services.forEach(services=>{
-    services.addEventListener("click", ()=>{
-        services.classList.toggle("selected");
+const searchableItems = [...treatment, ...places];
+
+searchInput.addEventListener("input", ()=>{
+    const term = searchInput.value.toLowerCase();
+
+    searchableItems.forEach(item=>{
+        const text = item.innerText.toLowerCase();
+         if(!term){
+            item.style.opacity = "1";
+        }else if(text.includes(term)){
+            item.style.opacity = "1";
+        }else{
+             item.style.opacity = "0.3";
+        }
     })
     
 })
+
+searchInput.addEventListener("keydown", (event)=>{
+    if(event.key === "Enter"){
+        event.preventDefault();
+        const term = searchInput.value.toLowerCase();
+    searchableItems.forEach(item => {
+            const text = item.innerText.toLowerCase();
+            if (text.includes(term)) {
+                item.style.opacity = "1";
+                item.scrollIntoView({ behavior: "smooth", block: "center" });
+            } else{
+                item.style.opacity = "0.3";
+            }
+         });
+      }
+    }
+
+)
+
+
+
 
 
 let locations = document.querySelectorAll(".img-1");

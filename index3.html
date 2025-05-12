@@ -14,14 +14,14 @@
         <div class="home-info">
             <div class="navbar">
                 <ul>
-                    <li>Home</li>
-                    <li>Explore</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
+                    <li><a href="#info">Home</a></li>
+                    <li><a href ="#location">Explore</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#feedback">Contact Us</a></li>
                     <i class="fa-regular fa-user" id="profile"></i>
                 </ul>
             </div>
-            <div class="info">
+            <div id="info">
                 <h1 class="welcome">Welcome to Glow Club</h1>
                 <p>Step into a world where style meets confidence.
                     Whether you're here for the perfect trim, a total transformation, or simply a moment of self-care, Glow Club is your ultimate destination for premium grooming.
@@ -33,13 +33,13 @@
         <div class="image">
             <img src="scissor.jpg" alt="image" class="scissor">
             <form>
-                <input type="search" placeholder="Search" class="search">
+                <input type="search" placeholder="Search" id="search">
             </form>
         </div>
 
     </div>
 
-    <div class="services">
+    <div id="services">
         <h1>What are you Looking For?</h1>
         <div class="services-info">
             <div class="serv-1">
@@ -70,7 +70,7 @@
         <hr>
     </div>
 
-    <div class="location">
+    <div id="location">
         <h1>Popular Clubs Around You</h1>
         <div class="services-info">
             <div class="serv-2">
@@ -114,8 +114,6 @@
                 <option class="time" value="16:00-16:45">16:00-16:45</option>
                 <option class="time" value="17:00-17:45">17:00-17:45</option>
             </select>
-          
-            <!-- <button type="submit">Book Appointment</button> -->
           </form>
         <button class="check-out">Check Out</button>
         <hr>
@@ -123,23 +121,23 @@
 
     
 
-    <div class="feedback">
+    <div id="feedback">
         <h1>We’d love to hear from you</h1>
         <form class="form-grid">
             <div class="row">
               <input type="email" placeholder="Email">
               <input type="tel" placeholder="Phone">
             </div>
-            <div class="row">
+            <div class="row-name">
               <input type="text" placeholder="Name">
             </div>
-            <div class="row">
+            <div class="message">
               <textarea placeholder="Message"></textarea>
             </div>
-            <div class="row">
+            <div class="send">
               <button type="submit">Send</button>
             </div>
-          </form>
+        </form>
           
     </div>
     

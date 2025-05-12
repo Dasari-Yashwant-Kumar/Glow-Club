@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
@@ -35,10 +39,14 @@ body{
     align-items: center;
     list-style: none;
     cursor: pointer;
-
 }
 
-.info{
+li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#info{
     display: flex;
     flex-direction:column;
     gap: 20px;
@@ -59,7 +67,7 @@ body{
     width: 700px;
 }
 
-.search{
+#search{
     background: rgb(0, 0, 0);
     color:#FFFFFF;
     position: absolute;
@@ -74,7 +82,7 @@ body{
     padding: 0 20px;
 }
 
-.services, .location{
+#services, #location{
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -143,46 +151,55 @@ button{
     cursor: pointer;
 }
 
-.feedback{
+#feedback{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.form-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-  }
-  
-  .row {
-    display: flex;
-    gap: 10px;
-    
-  }
-  
-  .row input {
-    flex: 1;
-    background: #333333;
-   
-    
-  }
-  
-  .row textarea {
-    width: 100%;
-    height: 80px;
-    background: #333333;
-    border: none;
-    outline: none;
-  }
-  
-  .row button {
-    width: 100%;
-    cursor: pointer;
+#feedback h1{
+    color: #FFFFFF;
+    margin: 30px 0;
 }
 
+.form-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row input{
+    background: white;
+    color:#AAAAAA;
+    margin: 0 10px;
+    padding: 10px 150px 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.row-name input{
+    background: white;
+    color:#AAAAAA;
+    width: 680px;
+    padding: 10px 150px 10px 15px;
+    border: none;
+    border-radius: 10px;
+    
+}
+  
+.message textarea{
+    width: 680px;
+    height: 80px;
+    background: white;
+    color:#AAAAAA;
+    padding: 10px 150px 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+  
 .bookings{
     display: flex;
     justify-content: space-between;
@@ -190,5 +207,14 @@ button{
     align-items: center;
 }
   
+.bookings select{
+    background: rgba(0, 0, 0, 0.8);
+    color:#FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 
