@@ -43,10 +43,14 @@ searchInput.addEventListener("keydown", (event)=>{
     }
 
 )
+let services = document.querySelectorAll(".img");
 
-
-
-
+services.forEach(services=>{
+    services.addEventListener("click", ()=>{
+        services.classList.toggle("selected");
+    })
+    
+})
 
 let locations = document.querySelectorAll(".img-1");
 
