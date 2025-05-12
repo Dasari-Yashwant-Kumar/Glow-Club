@@ -90,7 +90,7 @@ dropdown.appendChild(option);
 }
 
 dropdown.addEventListener("change", ()=>{
-    const selectedDate = option;
+    const selectedDate = dropdown.value;
     localStorage.setItem("selectedDate", selectedDate)
 })
 
