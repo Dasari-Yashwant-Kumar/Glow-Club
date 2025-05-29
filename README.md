@@ -22,7 +22,7 @@ Glow Club is a salon and beauty service booking web application that allows user
    ```bash
    git clone https://github.com/Dasari-Yashwant-Kumar/Glow-Club.git
    ```
-2. Open `index.html` in your favorite browser to view the project.
+
 
 ## Usage
 
