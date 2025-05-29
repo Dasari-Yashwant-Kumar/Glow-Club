@@ -60,6 +60,7 @@ button {
         align-items: center;
         justify-content: center;
         text-align: center;
+         margin: 30px;
     }
 
     .box {
@@ -87,6 +88,18 @@ button {
         width: 90vw;
     }
 
+    .content{
+        margin: 20px;
+    }
+     .content h1{
+        font-size: 30px;
+    }
+
+    .content h2{
+        font-size: 20px;
+
+    }
+
     .content {
         gap: 15px;
     }
@@ -100,13 +113,24 @@ button {
 
 @media (max-width: 450px) {
     .box {
-        padding: 10px;
         border-radius: 100px;
+        width: 80vw;
+        height: 40vh;
     }
 
     .content {
         font-size: 12px;
         gap: 10px;
+        margin: 10px;
+    }
+
+    .content h1{
+        font-size: 20px;
+    }
+
+    .content h2{
+        font-size: 15px;
+
     }
 
     button {
