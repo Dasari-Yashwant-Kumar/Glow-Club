@@ -61,23 +61,24 @@ body {
 
 @media(max-width: 800px) {
     .details {
-        height: 70%;
-        width: 70%;
+        height: 50%;
+        width: 60vw;
+        gap: 20px;
     }
 
     .details input {
-        padding: 7% 80% 7% 7%;
+          padding: 3% 7%;
+        width: 40vw;
 
     }
 
     .invitation {
-        font-size: 90%;
+        font-size: 80%;
     }
 
     .details button {
-
-        padding: 5% 50%;
-
+        width: 25vw;
+        padding: 3% 3%;
     }
 
 }
@@ -85,24 +86,28 @@ body {
 @media(max-width: 600px) {
 
     .details {
-        height: 75%;
-        width: 75%;
+        height: 40%;
+        gap: 15px;
     }
-
     .invitation {
-        font-size: 85%;
+        font-size: 65%;
     }
 
-    .details input {
 
-        padding: 7% 70% 7% 7%;
+}
+
+@media(max-width: 460px) {
+
+    .details {
+        height: 40%;
 
     }
+    .invitation {
+        font-size: 50%;
+    }
 
-    .details button {
-
-        padding: 4% 40%;
-
+     .details button {
+        font-size: 10px;
     }
 
 }

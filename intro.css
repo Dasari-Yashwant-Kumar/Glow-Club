@@ -114,14 +114,14 @@ button {
 @media (max-width: 450px) {
     .box {
         border-radius: 100px;
-        width: 80vw;
-        height: 40vh;
+        width: 85vw;
+        height: 45vh;
     }
 
     .content {
         font-size: 12px;
         gap: 10px;
-        margin: 10px;
+        margin: 5px;
     }
 
     .content h1{
