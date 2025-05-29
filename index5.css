@@ -225,6 +225,12 @@ hr {
     }
 }
 @media (max-width: 550px) {
+ *{
+    font-size: 15px;
+ }
+    h1, h2{
+        font-size: 20px;
+    }
 
     .main-content {
         display: flex;
