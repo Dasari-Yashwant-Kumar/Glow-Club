@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: rgba(0, 0, 0, 0.8);
     height: 100vh;
     display: flex;
@@ -12,8 +12,8 @@ body{
     align-items: center;
 }
 
-.details{
-    background: rgb(0,0,0);
+.details {
+    background: rgb(0, 0, 0);
     color: #FFFFFF;
     height: 500px;
     width: 500px;
@@ -25,25 +25,25 @@ body{
     border-radius: 50px;
 }
 
-.basic-details{
+.basic-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
     margin: 30px;
-   }
+}
 
-.details input{
+.details input {
     background: #333333;
-    color:#AAAAAA;
+    color: #AAAAAA;
     padding: 10px 150px 10px 15px;
     border: none;
     border-radius: 10px;
-    
+
 }
 
-.details button{
+.details button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +55,54 @@ body{
     cursor: pointer;
 }
 
-.details button:hover{
+.details button:hover {
     border: 2px solid #FFFFFF;
+}
+
+@media(max-width: 800px) {
+    .details {
+        height: 70%;
+        width: 70%;
+    }
+
+    .details input {
+        padding: 7% 80% 7% 7%;
+
+    }
+
+    .invitation {
+        font-size: 90%;
+    }
+
+    .details button {
+
+        padding: 5% 50%;
+
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .details {
+        height: 75%;
+        width: 75%;
+    }
+
+    .invitation {
+        font-size: 85%;
+    }
+
+    .details input {
+
+        padding: 7% 70% 7% 7%;
+
+    }
+
+    .details button {
+
+        padding: 4% 40%;
+
+    }
+
 }

@@ -1,39 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: rgba(0,0,0,0.8);
+body {
+    background: rgba(0, 0, 0, 0.8);
     color: #FFFFFF;
 }
 
-.club{
+.club {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     gap: 25px;
     margin: 45px 250px;
-    
+
 }
 
-.reservation{
+.reservation {
     display: flex;
     flex-direction: row;
     gap: 300px;
-    margin:10px 0;
+    margin: 10px 0;
 }
 
-.date, .time{
+.date,
+.time {
     background: #000000;
     padding: 5px 10px;
     width: 300px;
@@ -42,7 +43,7 @@ body{
     border: none;
 }
 
-.club-name{
+.club-name {
     background: #000000;
     padding: 5px 10px;
     width: 900px;
@@ -51,17 +52,17 @@ body{
     border: none;
 }
 
-.description{
+.description {
     display: flex;
     flex-direction: row;
     gap: 550px;
 }
 
-p{
+p {
     padding: 8px;
 }
 
-hr{
+hr {
     background: #99181A;
     width: 100%;
     height: 2px;
@@ -69,7 +70,7 @@ hr{
     border: none;
 }
 
-.total{
+.total {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,14 +79,14 @@ hr{
     margin: 35px 400px;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn button{
-    
+.btn button {
+
     width: 150px;
     height: 50px;
     font-size: 20px;
@@ -94,4 +95,187 @@ hr{
     border: none;
     border-radius: 25px;
     margin: 30px;
+}
+
+@media(max-width: 1200px) {
+
+    .booking-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25%;
+        margin-top: 5%;
+        width: 100%;
+
+    }
+
+    .club-name {
+        padding: 5px 10px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 190%;
+    }
+
+
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 75%;
+        margin: 2% 25%;
+
+    }
+
+}
+
+@media(max-width: 1000px) {
+
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25%;
+        margin-top: 5%;
+        width: 100%;
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 60%;
+        margin: 2% 10%;
+
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25%;
+        margin-top: 5%;
+        width: 100%;
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 55%;
+        margin: 2% 5%;
+
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 5%;
+        width: 80%;
+
+    }
+
+    .club-name {
+        width: 80%;
+    }
+
+    .description {
+        width: 180%;
+    }
+
+
+
+    .total {
+        gap: 50%;
+        margin: 2% 5%;
+
+    }
+}
+@media (max-width: 550px) {
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5%;
+    }
+
+    .booking-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .reservation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .date, .time, .club-name {
+        width: 100%;
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .total {
+        gap: 35%;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    hr {
+        background: #99181A;
+        height: 2px;
+        border: none;
+        width: 105vw; 
+        margin: 20px 0;
+        margin-left: -5vw; 
+    }
 }

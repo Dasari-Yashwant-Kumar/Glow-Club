@@ -91,3 +91,40 @@ hr{
     border: none;
     cursor: pointer;
 }
+
+@media(max-width:1000px){
+    .profile{
+    height: 55%;
+    width: 50%;
+    }
+
+    hr{
+    width: 100%;
+    height: 2px;
+}
+
+}
+
+@media(max-width:600px){
+.profile{
+    height: 65%;
+    width: 50%;
+    }
+
+   .option, .bookings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .option button{
+     margin: 5px 0;
+   }
+
+     hr{
+    width: 100%;
+    height: 2px;
+}
+
+}
