@@ -224,11 +224,14 @@ hr {
 
     }
 }
+
 @media (max-width: 550px) {
- *{
-    font-size: 15px;
- }
-    h1, h2{
+    * {
+        font-size: 15px;
+    }
+
+    h1,
+    h2 {
         font-size: 20px;
     }
 
@@ -258,7 +261,9 @@ hr {
         width: 100%;
     }
 
-    .date, .time, .club-name {
+    .date,
+    .time,
+    .club-name {
         width: 100%;
     }
 
@@ -280,8 +285,8 @@ hr {
         background: #99181A;
         height: 2px;
         border: none;
-        width: 105vw; 
+        width: 105vw;
         margin: 20px 0;
-        margin-left: -5vw; 
+        margin-left: -5vw;
     }
 }
